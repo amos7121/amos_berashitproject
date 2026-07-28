@@ -1,0 +1,131 @@
+body {
+    background-color: rgb(240, 211, 174);
+    margin-right: 110px;
+}
+h1{
+    color: rgb(39, 3, 3);
+    font-size: x-large;
+    text-align: center;
+    border-radius: 35px;
+    border-top: 7px solid rgb(39, 38, 39);
+    padding: 40px;
+}
+P{
+color: rgb(83, 30, 11);
+font-size: medium;
+text-align: left;
+text-decoration: wavy;
+border: 30px;
+border: radius 35px;;
+}
+h2{
+
+font-size: larger;
+text-align: center;
+padding: 20px;
+}
+ul{
+    
+    font-size: larger;
+    text-align: left;
+}
+h3{
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: center;
+padding: 20px;
+}
+ol{
+    font-size: larger;
+    text-align: left;
+}
+img{
+    border-radius: 35px;
+    size: 60px;
+}
+button{
+    padding: 20px;
+    background-color: rgb(175, 171, 171);
+    border-radius: 35px;
+
+}
+a{
+    color: rgb(175, 166, 166);
+    text-decoration: none;
+    margin-left: 120px;
+}
+.item{
+    background-color: darkkhaki;
+    border-radius: 35px;
+    text-decoration: underline;
+
+}
+.pimping{
+    background-color: rgb(243, 217, 217);
+    border-radius: 35px;
+}
+.contai{
+    background-color: black;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border-radius: 35px;
+}
+.row{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.pimp1{
+    background-color: beige;
+    padding: 30px;
+}
+.pimp2{
+    background-color: rgb(172, 167, 177);
+    padding: 30px;
+}
+.pimp3{
+    background-color: burlywood;
+    padding: 30px;
+}
+.navbar{
+    background-color: rgb(173, 173, 172);
+    border: 30px;
+    border-radius: 35px;
+    text-align: end;
+    padding: 20px;
+  }
+  .cards{
+    display: flex;
+    gap: 20px;
+    align-items: end;
+    justify-content: left;
+  }
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    gap: 20px;
+  }
+.card1{
+    background-color: aquamarine;
+}
+.card2{
+    background-color: bisque;
+
+}
+.card3{
+    background-color: cadetblue;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+@media (max-width: 200px) {
+    nav{
+        flex-direction: column;
+    }
+}
