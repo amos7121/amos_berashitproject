@@ -2,91 +2,99 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Berashit Foundation</title>
-   
-
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Berashit Foundation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
 </head>
 
-<button onmouseenter="greetUser">Greet User</button>
-
-
-
-<button id="Messagebtn">Show Message</buttton>
-
-
-
-<script src="app.js"></script>
 <body>
-    
-    
-    <header>
-    <div class="navbar">
-        <h1>Berashit</h1>
-        <nav>
-            <a href="#">home</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact</a>
-        </nav>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/">Berashit</a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">What we do</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-</header>
-    <h1> Hello, World</h1>
-</nav> 
-<section>
-    <div class="hero">
-        <h2>Welcome to the Hub</p>
-    <p>My name is Bognet Amos</p>
-    <p>I am the Founder of Berashit Foundation</p><br>
-    <p>A home to all</p>
-    <button type="submit">sign up</button>
-    </div>
-</section>
+  </header>
 
-<br><br>
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Berashit Foundation</h1>
+          <p class="lead">A humanitarian hub dedicated to feeding, clothing and sheltering those in need. Join us to make a tangible difference.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#signup">Sign up</a>
+            <a class="btn outline" href="#donate">Donate</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="images/photo2.png" alt="Renewed hope" width="520" height="360">
+        </div>
+      </div>
+    </section>
 
-<div class="cards">
-    <div class="card">card 1</div>
-    <div class="card">card 2</div>
-    <div class="card">card 3</div>
-    <div class="card">card 1</div>
-    <div class="card">card 2</div>
-    <div class="card">card 3</div>
- </div>
+    <section id="work" class="section container">
+      <h2>Our Programs</h2>
+      <p class="section-intro">We run short- and long-term programs to support families and individuals.</p>
+      <div class="cards-grid" role="list">
+        <article class="card" role="listitem">
+          <h3>Food & Nutrition</h3>
+          <p>Regular food distribution and community kitchens.</p>
+        </article>
+        <article class="card" role="listitem">
+          <h3>Clothing</h3>
+          <p>Clothing drives and seasonal collections for families.</p>
+        </article>
+        <article class="card" role="listitem">
+          <h3>Shelter</h3>
+          <p>Temporary shelter and referral support to long-term housing.</p>
+        </article>
+      </div>
+    </section>
 
-<h3 class="item">What we do</h2>
-    <ul class="pimping">
-        <li>We feed</li>
-        <li> We Clothe</li>
-        <li>We give Shelter</li>
-    </ul>
-    <h4 class="item">How to Partner with Us</h3>
-    <ol class="pimping">
+    <section id="about" class="section container">
+      <h2>About the Founder</h2>
+      <p>My name is Bognet Amos, founder of Berashit Foundation. We believe every person deserves a fresh start.</p>
+      <div class="actions-row">
+        <button id="greet-btn" class="btn">Greet</button>
+        <button id="message-btn" class="btn outline">Show message</button>
+      </div>
+    </section>
+
+    <section class="section container"> 
+      <h2>How to Partner with Us</h2>
+      <ol>
         <li>Pray</li>
         <li>Donate</li>
-        <li>Volunteer</li>        
-    </ol>
+        <li>Volunteer</li>
+      </ol>
+    </section>
 
-    <a href="tel:+234 701234567">Call now</a><br>
-    <a href="About.html">About Us</a><br>
-    <a href="mailto:">berashitfoundation@gmail.com</a>
+    <section id="contact" class="section container contact">
+      <h2>Contact</h2>
+      <p>
+        <a href="tel:+234701234567" class="link">Call: +234 701 234 567</a> •
+        <a href="mailto:berashitfoundation@gmail.com" class="link">berashitfoundation@gmail.com</a>
+      </p>
+    </section>
+  </main>
 
-    <img src="images/photo2.png" 
-    alt="Renewed Hope"
-     width="200">
-<div class="contai">
-        <p>Lets all begin on a new slate</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Berashit Foundation — A home to all.</p>
     </div>
-<div class="row">
-    <div class="pimp1">Pie 1</div>
-    <div class="pimp2">Pie 2</div>
-    <div class="pimp3">Pie 3</div>
-
-    <button type="button">Click Me</button>
-    <button type="submit">Donate</button>
- 
-    
+  </footer>
 </body>
-</html>
 
+</html>
